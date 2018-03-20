@@ -1,0 +1,4 @@
+figment-frontend/node_modules/
+figment-backend/vendor/bundle/
+figment-backend/log/
+figment-backend/tmp/
