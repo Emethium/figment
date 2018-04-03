@@ -4,11 +4,11 @@ ARG UID
 RUN adduser frontend --uid $UID --disabled-password --gecos ""
 
 ENV APP /usr/src/app
-RUN sudo mkdir $APP
+RUN mkdir $APP
 WORKDIR $APP
 
 COPY package.json yarn.lock $APP/
-RUN sudo yarn
+RUN yarn
 
 COPY . $APP/
 
