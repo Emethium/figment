@@ -37,6 +37,7 @@ export default {
   },
   methods: {
     login: function () {
+      this.$auth.syncToken()
       this.$auth.login({
         data: {
           user: {
